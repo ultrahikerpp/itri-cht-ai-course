@@ -25,9 +25,17 @@ export default function HomePage({ onStart, error }) {
       <div className={styles.content}>
         {/* Sponsor logos */}
         <div className={styles.logoBar}>
-          <img src="/logo_itri.png" alt="工研院 ITRI" className={styles.logo} />
+          <img
+            src={`${import.meta.env.BASE_URL}logo_itri.png`}
+            alt="工研院 ITRI"
+            className={styles.logo}
+          />
           <span className={styles.logoDivider}>×</span>
-          <img src="/CHT_logo.png" alt="中華電信 CHT" className={styles.logo} />
+          <img
+            src={`${import.meta.env.BASE_URL}CHT_logo.png`}
+            alt="中華電信 CHT"
+            className={styles.logo}
+          />
         </div>
 
         {/* Title */}
